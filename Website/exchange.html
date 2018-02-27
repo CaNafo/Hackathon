@@ -182,6 +182,23 @@
 				background-color: #f2f2f2;
 				padding: 20px;
 			}
+			
+			.sidenav {
+    height: 80%; /* Full-height: remove this if you want "auto" height */
+    width: 400px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 105px; /* Stay at the top */
+    left: 0;
+	bottom: 0px;
+    background-color: #fff; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	
+	border: 1px solid black;
+}
 </style>
 
     </head>
@@ -227,7 +244,7 @@
 
 			    <div id="div" class="row">
 
-				<div class="col-lg-4" style="margin-left:110px;">
+				<div class="sidenav">
 			  <form action="/action_page.php">
 				<label for="fname">First Name</label>
 				<input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -250,7 +267,7 @@
 			  </form>
 			</div>
 		
-			<div class="col-lg-6">
+			<div class="col-lg-12">
 
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript">
@@ -343,7 +360,7 @@
         map.fitBounds(latlngbounds);
     }
 </script>
-<div id="dvMap" style="width: 500px; height: 500px">
+<div id="dvMap" style="height: 75vh">
 </div>
 			</div>
            
